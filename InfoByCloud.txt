@@ -1,0 +1,7 @@
+The only thing that changed in this is the exile_server.pbo and the exile.ini. You can A) If you havent TOUCHED EITHER just copy and replace the file B) Merge them, but be wary somethings in extDB2 are not in extDB3
+You can literally just drop in your exile_server_config.pbo in here and replace the current one and it will work
+YOU WILL HAVE TO MODIFY exile_server.pbo if you have made custom changes like me (this pbo is vanilla exile_server.pbo with ONLY changes from extdb2 to extdb3)
+Both the config.cfg and basic.cfg are unchanged. 
+Pretty much this is a drop in replace for extdb3. Make sure you keep updated on Torndeco's downloads at https://bitbucket.org/torndeco/extdb3/downloads/
+If Torndeco updates extdb3 (which he does :D a lot) simply over write the current .so files for linux or the dlls for windows.
+OH AND LASTLY I did not update the names of the files in the exile_server.pbo. if you want to thats fine but change that fn_preinit as needed. Again this is not at all necessary.
