@@ -43,7 +43,7 @@ catch
 	if (!_error_locked) then
 	{
 		"MySQL connection error!" call ExileServer_util_log;
-		"Please have a look at @ExileServer/logs/ to find out what went wrong." call ExileServer_util_log;
+		"Please have a look at @extDB3/logs/ to find out what went wrong." call ExileServer_util_log;
 		format ["MySQL Error: %1", _exception]  call ExileServer_util_log;
 		"Server will shutdown now :(" call ExileServer_util_log;
 		//"extDB3" callExtension "9:SHUTDOWN"; Not implemented in extDB3
