@@ -24,7 +24,7 @@ try
 		throw format ["Could not add database: %1", _result]; 
 	};
 	"Connected to database!" call ExileServer_util_log;
-	ExileServerDatabaseSessionId = str(round(random(999999)));
+	ExileServerDatabaseSessionId = "SQL"; //str(round(random(999999)));
 	_result = call compile ("extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:exile:SQL_CUSTOM:SQL:exile.ini");
 	if ((_result select 0) isEqualTo 0) then
 	{
