@@ -17,7 +17,11 @@ ExileServerRconSessionID = "";
 try 
 {
 	_result = "extDB3" callExtension "9:VERSION";
-	format ["Installed extDB2 version: %1", _result] call ExileServer_util_log;
+	format ["Installed extDB3 version: %1", _result] call ExileServer_util_log;
+	if ((parseNumber _result) < 1.027) then
+	{
+		throw format ["Error Required extDB3 Version 1.027 or higher: %1", _result]; 
+	};
 	_result = call compile ("extDB3" callExtension "9:ADD_DATABASE:exile");
 	if (_result select 0 isEqualTo 0) then
 	{
