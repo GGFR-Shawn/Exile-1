@@ -5,7 +5,7 @@
  * www.exilemod.com
  * © 2015 Exile Mod Team
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
  
@@ -18,7 +18,7 @@ if (_containerID > -1) then
 	_vectorDirection = vectorDir _containerObject;
 	_vectorUp = vectorUp _containerObject;
 	_territoryFlag = _containerObject call ExileClient_util_world_getTerritoryAtPosition;
-	_territoryID = if (isNull _territoryFlag) then { 'NULL' } else { _territoryFlag getVariable ["ExileDatabaseID", 'NULL']};
+	_territoryID = if (isNull _territoryFlag) then { '' } else { _territoryFlag getVariable ["ExileDatabaseID", '']};
 	_containerObject setVariable ["ExileTerritoryID", _territoryID];
 	_data =
 	[
@@ -26,7 +26,7 @@ if (_containerID > -1) then
 		_position select 0,
 		_position select 1,
 		_position select 2,
-		_vectorDirection select 0, 
+		_vectorDirection select 0,
 		_vectorDirection select 1,
 		_vectorDirection select 2,
 		_vectorUp select 0,
